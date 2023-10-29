@@ -39,12 +39,12 @@ int main(int argc, char* argv[]) {
   // After the loop has finished summing the arguments, calculate the
   // average of the values. Recall that the average is the total value divided
   // by the number of values.
-  double average = sum / arguments.size();
+  double average = sum / (argc - 1);
 
   // Use cout to print out a message of the form
   // average = *AVERAGE*
   // on its own line.
-  std::cout << "average = " << average << "\n"; 
+  std::cout << "average = " << average << "\n";
 
   return 0;
 }
