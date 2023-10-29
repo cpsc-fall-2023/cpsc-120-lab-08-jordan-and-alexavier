@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
   // a number with the std::stod or std::stof function.
   double sum = 0.0;
   bool first = true;
-  for (std::string arg : arguments) {
+  for (std::string& arg : arguments) {
     if (first) {
       first = false;
     } else {
